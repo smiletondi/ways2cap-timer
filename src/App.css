@@ -1,0 +1,9 @@
+.App {
+  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  text-align: center;
+  background-color: #c2c094;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
