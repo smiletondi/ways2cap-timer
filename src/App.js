@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <div>
-        <h3 className="countdown-title">Countdown Timer</h3>
+        {/* <h3 className="countdown-title">Countdown Timer</h3> */}
         <div className="countdown">
           <div className="countdown-header">
             <div className="countdown-form">
@@ -27,7 +27,24 @@ function App() {
               </p> */}
             </div>
           </div>
-          
+          <div className="countdown-body">
+            <div className="countdown-body">
+              <h3 className="countdown-total">
+                <span className="minutes">15</span>
+                <span className="separator">:</span>
+                <span className="seconds"> 31 </span>
+              </h3>
+            </div>
+            <div className="countdown-stop-button">
+              <div className="btn btn-stop">
+                <i className="fa fa-pause"></i>
+              </div>
+              <div className="btn btn-start">
+                <i className="fa fa-play"></i>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div >
     </div >
