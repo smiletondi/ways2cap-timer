@@ -7,3 +7,36 @@
   align-items: center;
   justify-content: center;
 }
+
+/*********** timer-header *******************/
+
+.form-control {
+  margin-right: 10px;
+  width: 90px;
+}
+
+.form-error {
+  color: #da4f46;
+  height: 20px;
+  padding-top: 8px;
+  font-size: 12px;
+}
+
+.btn-form-start,
+.btn-form-reset {
+  /* cursor: pointer; */
+  border: none;
+  color: white;
+  font-weight: 700;
+  transition: 0.3s;
+  letter-spacing: 1px;
+  background: linear-gradient(to top right, #41b782, #86d169);
+}
+
+.btn-form-reset:hover {
+  opacity: 0.8;
+}
+
+.count {
+  margin-right: 10px;
+}
