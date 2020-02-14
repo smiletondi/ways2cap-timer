@@ -1,68 +1,26 @@
-import React from 'react';
+import React, { Component } from 'react';
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <div>
-        <div className="countdown">
-          <div className="countdown-header">
-            <div className="countdown-form">
-              <form className="form-inline">
-                <div className="form-group">
-                  <label for="input" className="font-weight-bold count">Countdown: </label>
-                  <input
-                    id="input"
-                    type="number"
-                    className="form-control"
-                    placeholder="(Min)"
-                    min="1"
-                  />
-                </div>
-                <div className="btn btn-form-start"> START </div>
-                {/* <div className="btn btn-form-reset"> RESET </div> */}
-              </form>
-              {/* <p className="form-error">
-                <span >error</span>
-              </p> */}
-            </div>
-          </div>
-          <div className="countdown-body">
-            <h5 className="font-weight-bolder my-3">More than halfway there!</h5>
-            <div className="countdown-body">
-              <h3 className="countdown-total">
-                <span className="minutes">15</span>
-                <span className="separator">:</span>
-                <span className="seconds"> 31 </span>
-              </h3>
-              <div className="countdown-play">
-                <div className="btn btn-stop">
-                  <i className="fa fa-pause"></i>
-                </div>
-                <div className="btn btn-start">
-                  <i className="fa fa-play"></i>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="countdown-footer">
-            <div className="countdown-speed-buttons">
-              <div className="btn btn-outline-dark">
-                1x
-              </div>
-              <div className="btn btn-outline-dark">
-                1.5x
-              </div>
-              <div className="btn btn-outline-dark">
-                2x
-              </div>
-            </div>
-          </div>
+import CountdownHeader from './components/CountdownHeader/CountdownHeader';
+import CountdownBody from './components/CountdownBody/CountdownBody';
+import CountdownFooter from './components/CountdownFooter/CountdownFooter';
 
-        </div>
-      </div >
-    </div >
-  );
+export class App extends Component {
+
+  render() {
+    return (
+      <div className="App">
+        <div>
+          <div className="countdown">
+            <CountdownHeader />
+            <CountdownBody />
+            <CountdownFooter />
+          </div>
+        </div >
+      </div>
+    )
+  }
 }
 
 export default App;

@@ -1,0 +1,14 @@
+.btn {
+    font-weight: 700;
+    transition: 0.3s;
+    border: none;
+    margin: 0 4px;
+    border: 1px solid;
+  }
+  
+  .btn .active {
+    /* color: white; */
+    font-weight: 700;
+    transition: 0.3s;
+    background: linear-gradient(to top right, #0c2b4d, #556a82);
+  }
