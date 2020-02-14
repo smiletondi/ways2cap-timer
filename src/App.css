@@ -97,7 +97,7 @@
   }
 }
 
-.countdown-stop-button .btn {
+.countdown-play .btn {
   color: white;
   font-weight: 700;
   transition: 0.3s;
@@ -111,12 +111,12 @@
   top: 20px;
 }
 
-.countdown-stop-button .btn i {
+.countdown-play .btn i {
   font-size: 13px;
   margin: 5px 0 0 0;
 }
 
-.countdown-stop-button .btn i.fa-play {
+.countdown-play .btn i.fa-play {
   margin-left: 1px;
 }
 
