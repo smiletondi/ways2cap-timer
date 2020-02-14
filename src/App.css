@@ -8,7 +8,29 @@
   justify-content: center;
 }
 
-/*********** timer-header *******************/
+.countdown {
+  width: 500px;
+  min-height: 310px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.25);
+}
+
+.countdown-header {
+  margin-top: 25px;
+}
+
+.countdown-body {
+  position: relative;
+}
+
+.countdown-footer {
+  margin-top: 30px;
+}
+
+/*********** countdown-header *******************/
 
 .form-control {
   margin-right: 10px;
@@ -66,7 +88,7 @@
 }
 
 .countdown-total {
-  font-size: 70px;
+  font-size: 90px;
 }
 
 @keyframes blinker {
@@ -96,4 +118,20 @@
 
 .countdown-stop-button .btn i.fa-play {
   margin-left: 1px;
+}
+
+/*************** countdown-footer ************/
+.btn {
+  font-weight: 700;
+  transition: 0.3s;
+  border: none;
+  margin: 0 4px;
+  border: 1px solid;
+}
+
+.btn .active {
+  /* color: white; */
+  font-weight: 700;
+  transition: 0.3s;
+  background: linear-gradient(to top right, #0c2b4d, #556a82);
 }

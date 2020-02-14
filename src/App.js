@@ -5,14 +5,14 @@ function App() {
   return (
     <div className="App">
       <div>
-        {/* <h3 className="countdown-title">Countdown Timer</h3> */}
         <div className="countdown">
           <div className="countdown-header">
             <div className="countdown-form">
               <form className="form-inline">
                 <div className="form-group">
-                  <h5 className="font-weight-bold count">Countdown: </h5>
+                  <label for="input" className="font-weight-bold count">Countdown: </label>
                   <input
+                    id="input"
                     type="number"
                     className="form-control"
                     placeholder="(Min)"
@@ -41,6 +41,19 @@ function App() {
               </div>
               <div className="btn btn-start">
                 <i className="fa fa-play"></i>
+              </div>
+            </div>
+          </div>
+          <div className="countdown-footer">
+            <div className="countdown-speed-buttons">
+              <div className="btn btn-outline-dark">
+                1x
+              </div>
+              <div className="btn btn-outline-dark">
+                1.5x
+              </div>
+              <div className="btn btn-outline-dark">
+                2x
               </div>
             </div>
           </div>
