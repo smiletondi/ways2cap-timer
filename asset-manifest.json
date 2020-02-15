@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ways2cap-timer/static/css/main.6f159583.chunk.css",
+    "main.js": "/ways2cap-timer/static/js/main.c0d52aad.chunk.js",
+    "main.js.map": "/ways2cap-timer/static/js/main.c0d52aad.chunk.js.map",
+    "runtime-main.js": "/ways2cap-timer/static/js/runtime-main.ddaced87.js",
+    "runtime-main.js.map": "/ways2cap-timer/static/js/runtime-main.ddaced87.js.map",
+    "static/js/2.08f81eb8.chunk.js": "/ways2cap-timer/static/js/2.08f81eb8.chunk.js",
+    "static/js/2.08f81eb8.chunk.js.map": "/ways2cap-timer/static/js/2.08f81eb8.chunk.js.map",
+    "index.html": "/ways2cap-timer/index.html",
+    "precache-manifest.e2c13392b2c95ab496e21064de48815a.js": "/ways2cap-timer/precache-manifest.e2c13392b2c95ab496e21064de48815a.js",
+    "service-worker.js": "/ways2cap-timer/service-worker.js",
+    "static/css/main.6f159583.chunk.css.map": "/ways2cap-timer/static/css/main.6f159583.chunk.css.map",
+    "static/js/2.08f81eb8.chunk.js.LICENSE.txt": "/ways2cap-timer/static/js/2.08f81eb8.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ddaced87.js",
+    "static/js/2.08f81eb8.chunk.js",
+    "static/css/main.6f159583.chunk.css",
+    "static/js/main.c0d52aad.chunk.js"
+  ]
+}
