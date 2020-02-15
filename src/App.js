@@ -48,7 +48,7 @@ export class App extends Component {
 
   handleStart = () => {
     this.timer = setInterval(() => {
-      let newCount = this.state.remainingTime - 1;
+      let newCount = this.state.remainingTime - 1*this.state.speed;
       this.setState(
         {
           remainingTime: newCount >= 0 ? newCount : 0,

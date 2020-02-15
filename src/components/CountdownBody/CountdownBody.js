@@ -12,7 +12,6 @@ function CountdownBody(props) {
     if (remainingTime === 0) {
         msg = "Time’s up!";
     }
-    console.log(msg)
 
 
     return (
@@ -48,20 +47,3 @@ function CountdownBody(props) {
 }
 
 export default CountdownBody;
-
-// import React, { Component } from 'react'
-
-
-
-// export class CountdownBody extends Component {
-
-//     render() {
-//         
-
-//         return (
-
-//         );
-//     }
-// }
-
-// export default CountdownBody;
