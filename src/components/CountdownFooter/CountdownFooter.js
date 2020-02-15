@@ -6,7 +6,7 @@ const speeds = [1, 1.5, 2];
 
 function CountdownFooter(props) {
     return (
-        <div className="countdown-footer">
+        <div className="countdown-footer container">
             <div className="countdown-speed-buttons">
                 {
                     speeds.map(elem => (

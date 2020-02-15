@@ -15,7 +15,7 @@ function CountdownBody(props) {
 
 
     return (
-        <div className="countdown-body">
+        <div className="countdown-body container">
             <h5
                 className={
                     (remainingTime < 10) ? "font-weight-bolder my-3 text-danger blink"

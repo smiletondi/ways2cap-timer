@@ -39,7 +39,7 @@ export class CountdownHeader extends Component {
 
     render() {
         return (
-            <div className="countdown-header">
+            <div className="countdown-header container">
                 <div className="countdown-form">
                     <form className="form-inline">
                         <div className="form-group">

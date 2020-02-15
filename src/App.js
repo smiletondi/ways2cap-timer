@@ -87,9 +87,9 @@ export class App extends Component {
 
   render() {
     return (
-      <div className="App">
-        <div>
-          <div className="countdown">
+      <div className="App container-fluid">
+        <div className="container">
+          <div className="countdown container">
             <CountdownHeader
               handleCountdown={this.handleCountdown}
               handleStart={this.handleStart}
