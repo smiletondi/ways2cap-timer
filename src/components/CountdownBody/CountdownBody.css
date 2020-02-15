@@ -17,7 +17,7 @@
     color: #da4f46;
 }
 
-.countdown-message .blinking {
+ .blink {
     animation: blinker 1s linear infinite;
 }
 

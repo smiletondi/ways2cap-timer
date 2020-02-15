@@ -12,15 +12,17 @@ function CountdownBody(props) {
     if (remainingTime === 0) {
         msg = "Time’s up!";
     }
-    if (remainingTime === undefined) {
-        msg = "";
-    }
     console.log(msg)
 
 
     return (
         <div className="countdown-body">
-            <h5 className="font-weight-bolder my-3">{msg}</h5>
+            <h5
+                className={
+                    (remainingTime < 10) ? "font-weight-bolder my-3 text-danger blink"
+                        : remainingTime < 20 ? "font-weight-bolder my-3 text-danger"
+                            : "font-weight-bolder my-3"
+                }>{msg}</h5>
 
             <div className="countdown-body">
                 <h3 className="countdown-total">
