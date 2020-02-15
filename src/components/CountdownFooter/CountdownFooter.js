@@ -1,25 +1,23 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import "./CountdownFooter.css";
 
-export class CountdownFooter extends Component {
-    render() {
-        return (
-            <div className="countdown-footer">
-                <div className="countdown-speed-buttons">
-                    <div className="btn btn-outline-dark">
-                        1x
-              </div>
-                    <div className="btn btn-outline-dark">
-                        1.5x
-              </div>
-                    <div className="btn btn-outline-dark">
-                        2x
-              </div>
-                </div>
+const speeds = [1, 1.5, 2];
+
+function CountdownFooter(props) {
+    return (
+        <div className="countdown-footer">
+            <div className="countdown-speed-buttons">
+                {
+                    speeds.map(elem => (
+                        <div key={elem} className="btn btn-outline-dark" onClick={()=>props.changeSpeed(elem)}>
+                            {elem}x
+                            </div>
+                    ))
+                }
             </div>
-        );
-    }
+        </div>
+    )
 }
 
 export default CountdownFooter;

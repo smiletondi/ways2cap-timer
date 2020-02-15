@@ -4,6 +4,37 @@ import "./CountdownHeader.css";
 
 export class CountdownHeader extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = {
+            time: 0,
+            set: false
+        };
+    };
+
+    handleChange = (event) => {
+        this.setState({
+            minutes: event.target.value,
+            time: event.target.value * 60,
+        });
+    }
+
+
+    handleStart = async (event) => {
+        event.preventDefault();
+        this.props.handleCountdown(this.state.time);
+        this.props.handleStart();
+        this.setState({ set: true })
+    }
+
+    handleReset = (event) => {
+        event.preventDefault();
+        // this.props.handleReset();
+        this.setState(
+            { minutes: 0, set: false }
+        );
+    }
+
 
 
     render() {
@@ -18,20 +49,27 @@ export class CountdownHeader extends Component {
                                 type="number"
                                 className="form-control"
                                 placeholder="(Min)"
+                                value={this.state.minutes === 0 ? "" : this.state.minutes}
+                                onChange={this.handleChange}
                                 min="1"
                             />
                         </div>
-                        <input
-                            className="btn btn-form-start"
-                            type="submit"
-                            value="Start"
-                            onClick={this.props.aa}
-                        />
-                        {/* <div className="btn btn-form-reset"> RESET </div> */}
+                        {
+                            !this.state.set ? (<input
+                                className="btn btn-form-start"
+                                type="submit"
+                                value="Start"
+                                onClick={this.handleStart}
+                            />)
+                                : (<input
+                                    className="btn btn-form-reset"
+                                    type="submit"
+                                    value="Reset"
+                                    onClick={this.handleReset && this.props.handleReset}
+                                />)
+                        }
+
                     </form>
-                    {/* <p className="form-error">
-                <span >error</span>
-              </p> */}
                 </div>
             </div>
 
